@@ -1,0 +1,24 @@
+.hero-wrap{
+    height: 400px !important;
+   
+    .container{
+        height: 100%;
+        .no-gutters{
+            height: 100%;
+            .text-center{
+                .mb-0 {
+                    color: black;
+                }
+            }
+            .mb-2 {
+                >span{
+                    color: black ;
+                    >a{
+                        color: black ;
+                    }
+                }
+            }
+        }
+    }
+   
+}
