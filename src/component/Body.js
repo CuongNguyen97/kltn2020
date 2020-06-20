@@ -5,8 +5,7 @@ import img from './images/room-1.jpg'
 export default class Body extends Component {
 	render() {
 		return (
-			<div>
-				<div className="hero-wrap js-fullheight" data-stellar-background-ratio="0.5">
+				<div className="hero-wrap"  data-stellar-background-ratio="0.5">
 					<div className="overlay"></div>
 					<div className="container">
 						<div className="col-md-7 ">
@@ -16,7 +15,7 @@ export default class Body extends Component {
 							<h2 className="subheading" style={{ color: "red" }}>
 								Welcome to Smart Real</h2>
 						</div>
-						<div className="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true"></div>
+						<div className="row no-gutters slider-text align-items-center justify-content-start"></div>
 						<section className="ftco-section ftco-services">
 							<div className="container">
 								<div className="row">
@@ -60,7 +59,7 @@ export default class Body extends Component {
 										<h2 className="title">Apartment Room</h2>
 									</div>
 								</div>
-								<div classNameName="row no-gutters">
+								<div className="row no-gutters">
 									<div className="row" >
 										<div className="col-md-6">
 											<div className="room-wrap d-md-flex">
@@ -151,7 +150,6 @@ export default class Body extends Component {
 					</div>
 				</div>
 
-			</div>
 		);
 	}
 }

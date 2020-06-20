@@ -6,7 +6,7 @@ export default class Header extends Component {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar  ftco-navbar-light" id="ftco-navbar">
                 <div className="container">
-                    <a className="navbar-brand" href="index.html">SMART <span>REAL</span></a>
+                    <a className="navbar-brand" href="/home">SMART <span>REAL</span></a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="fa fa-bars"></span> Menu
 	                </button>
