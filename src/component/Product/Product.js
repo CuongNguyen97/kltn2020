@@ -36,7 +36,7 @@ class Product extends Component {
 					<br />
 					<br />
 
-                <div classNameName="row no-gutters">
+                <div className="row no-gutters">
                     <div className="row" >
                         <div className="col-md-12">
                             <div className="room-wrap d-md-flex">

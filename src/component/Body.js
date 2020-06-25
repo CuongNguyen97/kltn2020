@@ -5,9 +5,8 @@ import img from './images/room-1.jpg'
 export default class Body extends Component {
 	render() {
 		return (
-			<div>
-				<div className="hero-wrap" data-stellar-background-ratio="0.5">
-					<div className="overlay"></div>asdasdasdasdas
+				<div className="hero-wrap"  data-stellar-background-ratio="0.5">
+					<div className="overlay"></div>
 					<div className="container">
 						<div className="col-md-7 ">
 							<br />
@@ -160,7 +159,6 @@ export default class Body extends Component {
 					</div>
 				</div>
 
-			</div>
 		);
 	}
 }
