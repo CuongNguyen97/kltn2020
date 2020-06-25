@@ -4,12 +4,10 @@ import Header from './component/Header';
 import Body from './component/Body';
 import Login from './component/Login';
 import Rooms from './component/Rooms/Rooms';
-
 import './App.css';
 import Maps from './component/Location/Maps';
 import Blog from './component/Blog/Blog';
 import Contact from './component/Contact/Contact';
-//import Maps from './component/Location/Maps';
 import Product from './component/Product/Product';
 import Footer from './component/Footer';
 function App() {
@@ -38,25 +36,27 @@ function App() {
       <Router>
         <div>
           <Switch>
-            <Route exact path="/">
-              <Body />
-            </Route>
+          <Route exact path={["/home", "/"]}>
+							<div style={{ height: 1800 + "px" }}>
+								<Body />
+							</div>
+						</Route>
             <Route path="/login">
               <Login />
             </Route>
             <Route path="/blog">
               <Blog />
             </Route>
-            <Route path="/Contact">
+            <Route path="/contact">
               <Contact />
             </Route>
-            <Route path="/Rooms">
+            <Route path="/rooms">
               <Rooms />
             </Route>
-            <Route path="/Maps">
+            <Route path="/maps">
               <Maps />
               </Route>
-            <Route path="/Product">
+            <Route path="/product">
               <Product />
             </Route> 
             {/* <Redirect from="/Blog" to="/Product" /> */}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './css/style.scss'
-import hinh1 from './images/room-1.jpg'
+import hinh1 from './images/work-4.jpg'
 import hinh2 from './images/work-2.jpg'
 import hinh3 from './images/work-5.jpg'
 
@@ -9,38 +9,38 @@ class Product extends Component {
         return (
             <div>
                 <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <img className="d-block w-50"
+                    <div style={{width: '100%', height: 500}} className="carousel-inner">
+                        <div style={{height: "100%"}} className="carousel-item active">
+                            <img style={{height: "100%"}} className="d-block w-100"
                                 src={hinh1}
-                                alt="First slide" />
-                            <div className="carousel-item">
-                                <img className="d-block w-100"
-                                    src={hinh2}
-                                    alt="Second slide" />
-                                <div className="carousel-item">
-                                    <img className="d-block w-100"
-                                        src={hinh3}
-                                        alt="Third slide" />
-                                </div>
-                                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span className="sr-only">Previous</span>
-                                </a>
-                                <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span className="sr-only">Next</span>
-                                </a>
-                            </div>
-                        </div>
+                                alt="First slide" /></div>
+                        <div style={{height: "100%"}} className="carousel-item">
+                            <img style={{height: "100%"}} className="d-block w-100"
+                                src={hinh2}
+                                alt="Second slide" /></div>
+                        <div style={{height: "100%"}} className="carousel-item">
+                            <img style={{height: "100%"}} className="d-block w-100"
+                                src={hinh3}
+                                alt="Third slide" /></div>
                     </div>
+                    <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Previous</span>
+                    </a>
+                    <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Next</span>
+                    </a>
                 </div>
+                    <br />
+					<br />
+					<br />
 
                 <div classNameName="row no-gutters">
                     <div className="row" >
                         <div className="col-md-12">
                             <div className="room-wrap d-md-flex">
-                                <img style={{ width: '70%' }} />
+                                <img style={{ width: '100%' }} />
                                 {/* <a href="#" className="img" style="background-image: url(images/room-1.jpg);"></a> */}
                                 <div className="half left-arrow d-flex align-items-center">
                                     <div className="text p-4 p-xl-5 text-center">
@@ -53,12 +53,13 @@ class Product extends Component {
                                             <li><span>View:</span> Sea View</li>
                                             <li><span>Bed:</span> 1</li>
                                         </ul>
+                                        
                                         <p className="pt-1"><a href="room-single.html" className="btn-custom px-3 py-2">View Room Details <span className="icon-long-arrow-right"></span></a></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>>
+                    </div>
             </div>
             </div>
 

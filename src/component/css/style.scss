@@ -15,14 +15,21 @@
     }
 }
 .hero wrap {
-    background-image: url('../images/bg_1.jpg');
+    background-image: url('../images/banner.jpg');
 }
 
 .ftco-footer {
+    margin-top: 150px;
+    background-color: #FFF;
     bottom: 0;
     .mb-4{
         bottom: 0;
         width: 100%;
 
     }
+}
+
+.btn-orange {
+    font-size: 20px;
+    font-weight: bold;
 }

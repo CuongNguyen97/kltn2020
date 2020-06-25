@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PickerButton from 'antd/lib/date-picker/PickerButton'
 
 export default class Footer extends Component {
     render() {
@@ -8,7 +9,7 @@ export default class Footer extends Component {
             //     <li><a href='https://www.facebook.com/'><span className="icon-facebook">asd</span></a></li>
             //     <li><a href='https://www.instagram.com/'><span className="icon-instagram">asd</span></a></li>
             // </ul>
-            <div className="ftco-footer ftco-section">
+            <div className="ftco-footer ftco-section" >
                 <div className="container">
                     <div className="row mb-5">
                         <div className="col-md">
@@ -60,7 +61,7 @@ export default class Footer extends Component {
                                 <div className="block-23 mb-3">
                                     <ul>
                                         <li><span className="icon icon-map-marker"></span><span className="text">203 Fake St. Mountain View, San
-                    Francisco, California, USA</span></li>
+                                         Francisco, California, USA</span></li>
                                         <li><a href='#/home'><span className="icon icon-phone"></span><span className="text">+2 392 3929 210</span></a></li>
                                         <li><a href='#/home'><span className="icon icon-envelope pr-4"></span><span
                                             className="text">info@yourdomain.com</span></a></li>

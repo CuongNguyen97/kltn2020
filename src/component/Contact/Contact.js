@@ -7,10 +7,10 @@ class Contact extends Component {
     render() {
         return (
             <div>
-                <section className="hero-wrap"  data-stellar-background-ratio="0.5">
+                <section className="hero-wrap1 d-flex flex-column bg-white"  d1ata-stellar-background-ratio="0.5">
                     <img style={{height: 400,width: "100%",position: 'absolute'}} src={images}/>
                     <div className="overlay"></div>
-                        <div className="container">
+                        <div style={{marginTop: 100}} className="container">
                          <div className="row no-gutters slider-text align-items-center justify-content-center">
                             <div className="col-md-9 text-center">
           	                    <p className="breadcrumbs mb-2">
@@ -20,7 +20,7 @@ class Contact extends Component {
                              </div>
                         </div>
                     </div>
-                    <div className="col-md-12">
+                    <div style={{marginTop: 180}} className="col-md-12">
 						<div className="wrapper">
 							<div className="row no-gutters">
 								<div className="col-lg-8 col-md-7 d-flex align-items-stretch">

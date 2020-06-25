@@ -20,7 +20,7 @@ class Rooms extends Component {
 				<br/>
                 <section className=" bg-light" >
 					<div className="container-fluid px-md-0">
-						<div classNameName="row no-gutters">
+						<div className="row no-gutters">
 							<div className="row" style={{margin: 10}}>
 								<div className="col-md-6">
 									<div className="room-wrap d-md-flex">
