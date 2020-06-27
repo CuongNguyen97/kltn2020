@@ -7,6 +7,7 @@ import GoogleLogin from 'react-google-login';
 import backgroundImg from './images/background-ss1.jpg'
 import './style.scss';
 import _ from 'lodash'
+import { API_URL } from '../../helper/variables'
 
 const { TabPane } = Tabs;
 
@@ -62,25 +63,15 @@ export default class formLogin extends Component {
     }
 
     onSubmit(e) {
-        const data = new FormData(); //form data
-  data.append('UserName', this.state.email);
-  data.append('Password', this.state.password);
+        const data = {
+            username: this.state.email,
+            password: this.state.password,
+        }
 
-        axios.post('http://45.119.83.78:7745/api/Account/Login', data, {headers: {'Content-Type': 'multipart/form-data'}}).then(response => {
-            console.log("TCL: formLogin -> onSubmit -> response", response)
-            if (response.data.success) {
-                this.onClose()
-               // localStorage.setItem('jwt', response.data.result.jwt);
-                //localStorage.setItem('name', response.data.meta ? response.data.meta.name : null);
-                //localStorage.setItem('email', this.state.email);
-                //this.props.userVisible && this.props.userVisible()
-                //this.props.getName && this.props.getName(!_.isEmpty(response.data.meta) ? response.data.meta.name : '')
-                //this.props.getEmail && this.props.getEmail(this.state.email)
-            } else {
-                notification['error']({
-                    message: response.data.message,
-                });
-            }
+        axios.post(`${API_URL}/auth/login`, data).then(response => {
+            localStorage.setItem("token", response.data);
+        }).then(()=>{
+            window.location.href = "/";
         }).catch(error => {
             console.log("TCL: formLogin -> onSubmit -> error", error)
         });
