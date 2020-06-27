@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./component/Header";
 import Body from "./component/Body";
 import Login from "./component/Login";
@@ -13,6 +13,12 @@ import Contact from "./component/Contact/Contact";
 import Product from "./component/Product/Product";
 import Footer from "./component/Footer";
 function App() {
+	useEffect(() => {
+    if (!localStorage.getItem("token") && window.location.pathname !== "/login") {
+      window.location.href = "/login";
+    }
+  }, []);
+
 	return (
 		<div>
 			<div className="wrap">
